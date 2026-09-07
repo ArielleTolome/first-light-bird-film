@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102523">
+  <title>First Light — A Small Bird. A Very Big Sky.</title>
+  <meta name="description" content="An original one-minute 3D animated bird film. Eight cinematic shots, from a first flight through lush forests to finding a flock in the sunset sky. Original music and nature sounds.">
+  <link rel="canonical" href="https://first-light-bird-film.vercel.app/">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:site_name" content="First Light">
+  <meta property="og:title" content="First Light — A Small Bird. A Very Big Sky.">
+  <meta property="og:description" content="One minute. Eight shots. An original animated journey through forests, flamingo lagoons, storm clouds, and sunset skies. Watch the complete film.">
+  <meta property="og:url" content="https://first-light-bird-film.vercel.app/">
+  <meta property="og:image" content="https://first-light-bird-film.vercel.app/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://first-light-bird-film.vercel.app/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="First Light: a jewel-colored turquoise bird perched on a flowering branch in a sunlit forest. A small bird. A very big sky.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="First Light — A Small Bird. A Very Big Sky.">
+  <meta name="twitter:description" content="An original 60-second animated bird film. Eight cinematic shots. Original score. Watch the journey.">
+  <meta name="twitter:image" content="https://first-light-bird-film.vercel.app/og-image.jpg">
+  <meta name="twitter:image:alt" content="A turquoise bird in a dawn forest beside the title First Light.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root{color-scheme:dark;--ink:#102523;--paper:#f3edda;--muted:#b8c4ba;--gold:#dcb777;--line:#354b43}
+    *{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-underline-offset:5px}a:focus-visible,video:focus-visible{outline:3px solid var(--gold);outline-offset:6px}
+    .wrap{width:min(1160px,calc(100% - 80px));margin:auto}
+    header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:34px 0 30px}
+    .wordmark{font-size:15px;letter-spacing:.23em;text-decoration:none;white-space:nowrap}.overline{margin:0;color:var(--muted);font-size:10px;letter-spacing:.22em;line-height:1.6;text-transform:uppercase}
+    .screen{margin:0;border:1px solid var(--line);background:#111b20;line-height:0}
+    video{display:block;width:100%;aspect-ratio:16/9;height:auto;object-fit:contain;background:#111b20}
+    .info{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:38px 0 40px}
+    h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(42px,5vw,64px);letter-spacing:-.045em;line-height:1;margin:0 0 17px}
+    .tagline{font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.4;margin:0;color:var(--muted)}
+    .meta{display:flex;gap:10px 20px;flex-wrap:wrap;margin:23px 0 0;padding:0;list-style:none;color:var(--gold);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    .synopsis{color:var(--muted);font-size:16px;line-height:1.7;margin:0;max-width:480px}
+    .actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 26px;margin-top:23px}.download{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;text-decoration:none;padding:14px 19px;min-height:44px}.download:hover{background:#ead09f}.source{font-size:12px;padding:12px 0}.source:hover{color:var(--gold)}
+    footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;padding:23px 0 31px;color:var(--muted);font-size:11px;line-height:1.6}
+    .audio-note{margin:12px 0 0;color:var(--muted);font-size:11px;letter-spacing:.02em}
+    @media(max-width:700px){.wrap{width:calc(100% - 36px)}header{padding:23px 0;gap:18px}.overline{text-align:right;font-size:8px;max-width:145px}.wordmark{font-size:12px}.info{grid-template-columns:1fr;gap:25px;padding:27px 0 30px}.tagline{font-size:20px}.meta{margin-top:18px;gap:10px 16px}.synopsis{font-size:15px}footer{flex-direction:column;gap:5px;padding:19px 0 25px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="wordmark" href="/" aria-label="First Light home">FIRST LIGHT</a><p class="overline">An original animated short</p></header>
+    <main>
+      <figure class="screen">
+        <video controls playsinline preload="metadata" poster="/assets/poster.jpg" aria-label="Watch First Light, the complete one-minute animated film" aria-describedby="film-description audio-note">
+          <source src="/assets/first-light-v1.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="/assets/first-light-v1.mp4">Download and watch First Light.</a>
+        </video>
+      </figure>
+      <p id="audio-note" class="audio-note">Best enjoyed with sound. Original music and nature sounds; no dialogue.</p>
+      <section class="info" aria-labelledby="film-title">
+        <div>
+          <h1 id="film-title">First Light</h1>
+          <p class="tagline">A small bird. A very big sky.</p>
+          <ul class="meta" aria-label="Film details"><li>60 seconds</li><li>8 shots</li><li>1080p</li><li>Original score</li></ul>
+        </div>
+        <div>
+          <p id="film-description" class="synopsis">A jewel-colored bird takes its first leap into a world of lush forests, flamingo lagoons, and gathering storms. Beyond the clouds, a bigger sky—and a flock—await.</p>
+          <nav class="actions" aria-label="Film downloads and source">
+            <a class="download" href="https://github.com/ArielleTolome/first-light-bird-film/releases/download/v1.0.0/FIRST-LIGHT.mp4">Download original film <span aria-hidden="true">↓</span></a>
+            <a class="source" href="https://github.com/ArielleTolome/first-light-bird-film">View source on GitHub</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer><span>A one-minute journey from first flight to finding a flock.</span><a href="https://github.com/ArielleTolome/first-light-bird-film/releases/tag/v1.0.0">Release v1.0.0</a></footer>
+  </div>
+</body>
+</html>

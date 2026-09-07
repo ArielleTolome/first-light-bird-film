@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>FIRST LIGHT — An animated bird film</title>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.js","three/addons/":"./assets/vendor/addons/"}}</script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{width:1920px;height:1080px;overflow:hidden;background:#111b20}
+    #root{position:relative;width:1920px;height:1080px;overflow:hidden;background:#111b20}
+    #film{position:absolute;inset:0;width:1920px;height:1080px;display:block}
+    .letterbox{position:absolute;left:0;right:0;height:86px;background:#111b20;z-index:3}
+    .top{top:0}.bottom{bottom:0}
+    #opening{position:absolute;left:138px;top:286px;width:700px;color:#fff4d9;z-index:2;opacity:0;text-shadow:0 2px 28px #173833}
+    #opening::before{content:'';position:absolute;inset:-130px -60px -130px -145px;background:radial-gradient(ellipse at 30% 45%,rgba(12,35,30,.83),rgba(12,35,30,.42) 48%,transparent 73%);z-index:-1}
+    .eyebrow{font:400 24px 'Space Mono',monospace;letter-spacing:5px;color:#fff4d9;margin-bottom:25px}
+    h1{font:400 98px 'Montserrat',sans-serif;line-height:1.03;letter-spacing:13px;width:650px}
+    .sub{font:400 23px 'Montserrat',sans-serif;letter-spacing:4px;line-height:1.6;margin-top:27px}
+    #ending{position:absolute;left:310px;right:310px;top:300px;text-align:center;color:#223f4c;z-index:2;opacity:0;text-shadow:0 2px 30px #f8e8cd}
+    #ending h2{font:400 94px 'Montserrat',sans-serif;letter-spacing:20px;line-height:1.2}
+    #ending p{font:400 25px 'Montserrat',sans-serif;letter-spacing:5px;margin-top:27px}
+  </style>
+</head>
+<body>
+  <div data-hf-id="hf-qpyu" id="root" data-composition-id="first-light" data-duration="60" data-width="1920" data-height="1080">
+    <canvas data-hf-id="hf-argu" id="film" class="clip" data-start="0" data-duration="60" data-track-index="0" aria-label="Eight-shot original 3D animated bird film"></canvas>
+    <div data-hf-id="hf-st17" id="opening" data-layout-allow-overlap="">
+      <p data-hf-id="hf-2g8o" class="eyebrow">AN ANIMATED SHORT FILM</p>
+      <h1 data-hf-id="hf-n3jw">FIRST<br data-hf-id="hf-x5px">LIGHT</h1>
+      <p data-hf-id="hf-nfv2" class="sub">A SMALL BIRD.<br data-hf-id="hf-rsrt">A VERY BIG SKY.</p>
+    </div>
+    <div data-hf-id="hf-nnuo" id="ending" data-layout-allow-overlap="">
+      <h2 data-hf-id="hf-vffv">FIRST LIGHT</h2>
+      <p data-hf-id="hf-j1p5">THE SKY IS ONLY THE BEGINNING.</p>
+    </div>
+    <div data-hf-id="hf-gpwr" class="letterbox top" data-layout-ignore=""></div>
+    <div data-hf-id="hf-e9d9" class="letterbox bottom" data-layout-ignore=""></div>
+    <audio data-hf-id="hf-xrzo" id="original-score" class="clip" src="assets/score.wav" data-start="0" data-duration="60" data-track-index="10" data-volume="1"></audio>
+  </div>
+  <script type="module">
+    import './film.mjs';
+    const tl=gsap.timeline({paused:true});
+    tl.fromTo('#opening',{opacity:0,y:12},{opacity:1,y:0,duration:1.5,ease:'power2.out'},.4)
+      .to('#opening',{opacity:0,duration:1.1},5.3)
+      .fromTo('#ending',{opacity:0,y:10},{opacity:1,y:0,duration:2,ease:'power2.out'},55.6);
+    window.__timelines=window.__timelines||{};
+    window.__timelines['first-light']=tl;
+  </script>
+</body>
+</html>

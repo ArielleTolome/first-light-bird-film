@@ -1,0 +1,22 @@
+{
+  "title": "FIRST LIGHT",
+  "duration": 60,
+  "fps": 30,
+  "resolution": [1920, 1080],
+  "concept": "A jewel-colored young bird discovers a much bigger sky: curiosity, courage, wonder, adversity, release, belonging.",
+  "style": "Original sculptural 3D animation, layered feathers, botanical dioramas, luminous atmospheric depth, cinematic camera moves. No stock footage, no narration, no slides.",
+  "palette": {"forest": "#173e3b", "bird": "#159a98", "breast": "#efae56", "light": "#fff1cb", "lagoon": "#e88986", "storm": "#283747", "sunset": "#dc956e"},
+  "typography": ["Montserrat", "Space Mono"],
+  "motionRules": ["multi-phase-camera", "sine-wave-loop"],
+  "implementation": "One seek-safe Three.js stage shares the hero rig across eight camera shots. The timeline has a single 60s root; this avoids multiple WebGL contexts and preserves bird identity.",
+  "shots": [
+    {"start":0,"end":7.5,"name":"The awakening","camera":"Intimate 3/4 dolly in, first-light rim","action":"Bird blinks and looks into sunrise from a mossy flowering branch."},
+    {"start":7.5,"end":15,"name":"The leap","camera":"Wide reveal becoming lateral tracking","action":"Anticipation, takeoff, layered wings opening; flight through giant ferns."},
+    {"start":15,"end":22.5,"name":"River ribbons","camera":"Low water-level tracking, banking arc","action":"Hero and golden companion skim shimmering turquoise water."},
+    {"start":22.5,"end":30,"name":"Coral ballet","camera":"Lagoon crane and gentle orbit","action":"An elegant flock of flamingos grazes while the tiny bird passes overhead."},
+    {"start":30,"end":37.5,"name":"Into the weather","camera":"Tight leading 3/4 chase, restrained roll","action":"Bird beats against rain and slate clouds, then turns upward."},
+    {"start":37.5,"end":45,"name":"A world above","camera":"Ascending cloud reveal into wide orbit","action":"Breakthrough into golden blue light, wings spread above a sea of clouds."},
+    {"start":45,"end":52.5,"name":"Not alone","camera":"Expanding flock panorama","action":"Bird joins a sweeping murmuration silhouetted against sunset."},
+    {"start":52.5,"end":60,"name":"First light, endless sky","camera":"Serene retreat into final horizon","action":"Companions glide toward the sun; title resolves over the living final image."}
+  ]
+}

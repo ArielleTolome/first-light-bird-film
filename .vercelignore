@@ -1,0 +1,7 @@
+.git/
+.stitch/
+first-light/
+node_modules/
+.env*
+verification*
+release-notes.txt
