@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#102523">
   <title>First Light — A Small Bird. A Very Big Sky.</title>
-  <meta name="description" content="An original one-minute 3D animated bird film. Eight cinematic shots, from a first flight through lush forests to finding a flock in the sunset sky. Original music and nature sounds.">
+  <meta name="description" content="Follow Pip, a little bird discovering a very big sky. An original one-minute 3D animated story with warm narration, eight cinematic shots, original music, and nature sounds.">
   <link rel="canonical" href="https://first-light-bird-film.vercel.app/">
   <meta property="og:type" content="video.movie">
   <meta property="og:site_name" content="First Light">
   <meta property="og:title" content="First Light — A Small Bird. A Very Big Sky.">
-  <meta property="og:description" content="One minute. Eight shots. An original animated journey through forests, flamingo lagoons, storm clouds, and sunset skies. Watch the complete film.">
+  <meta property="og:description" content="A small bird. A very big sky. Follow Pip's first flight in this one-minute animated story, now with a warm storyteller, original music, and optional English subtitles.">
   <meta property="og:url" content="https://first-light-bird-film.vercel.app/">
   <meta property="og:image" content="https://first-light-bird-film.vercel.app/og-image.jpg">
   <meta property="og:image:secure_url" content="https://first-light-bird-film.vercel.app/og-image.jpg">
@@ -20,7 +20,7 @@
   <meta property="og:image:alt" content="First Light: a jewel-colored turquoise bird perched on a flowering branch in a sunlit forest. A small bird. A very big sky.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="First Light — A Small Bird. A Very Big Sky.">
-  <meta name="twitter:description" content="An original 60-second animated bird film. Eight cinematic shots. Original score. Watch the journey.">
+  <meta name="twitter:description" content="Follow Pip's first flight: a 60-second animated story with warm narration, eight cinematic shots, and an original score.">
   <meta name="twitter:image" content="https://first-light-bird-film.vercel.app/og-image.jpg">
   <meta name="twitter:image:alt" content="A turquoise bird in a dawn forest beside the title First Light.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -33,6 +33,7 @@
     .wordmark{font-size:15px;letter-spacing:.23em;text-decoration:none;white-space:nowrap}.overline{margin:0;color:var(--muted);font-size:10px;letter-spacing:.22em;line-height:1.6;text-transform:uppercase}
     .screen{margin:0;border:1px solid var(--line);background:#111b20;line-height:0}
     video{display:block;width:100%;aspect-ratio:16/9;height:auto;object-fit:contain;background:#111b20}
+    video::cue{font-family:Arial,Helvetica,sans-serif;font-size:clamp(14px,1.3vw,22px);color:#fff;background-color:rgba(8,22,20,.88)}
     .info{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:38px 0 40px}
     h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(42px,5vw,64px);letter-spacing:-.045em;line-height:1;margin:0 0 17px}
     .tagline{font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.4;margin:0;color:var(--muted)}
@@ -50,11 +51,12 @@
     <main>
       <figure class="screen">
         <video controls playsinline preload="metadata" poster="/assets/poster.jpg" aria-label="Watch First Light, the complete one-minute animated film" aria-describedby="film-description audio-note">
-          <source src="/assets/first-light-v1.mp4" type="video/mp4">
-          Your browser does not support embedded video. <a href="/assets/first-light-v1.mp4">Download and watch First Light.</a>
+          <source src="/assets/first-light-v1.1.mp4" type="video/mp4">
+          <track kind="subtitles" src="/assets/narration-en.vtt" srclang="en" label="English">
+          Your browser does not support embedded video. <a href="/assets/first-light-v1.1.mp4">Download and watch First Light.</a>
         </video>
       </figure>
-      <p id="audio-note" class="audio-note">Best enjoyed with sound. Original music and nature sounds; no dialogue.</p>
+      <p id="audio-note" class="audio-note">Best enjoyed with sound. English story narration, original music, and nature sounds. Optional English subtitles in the player.</p>
       <section class="info" aria-labelledby="film-title">
         <div>
           <h1 id="film-title">First Light</h1>
@@ -62,15 +64,15 @@
           <ul class="meta" aria-label="Film details"><li>60 seconds</li><li>8 shots</li><li>1080p</li><li>Original score</li></ul>
         </div>
         <div>
-          <p id="film-description" class="synopsis">A jewel-colored bird takes its first leap into a world of lush forests, flamingo lagoons, and gathering storms. Beyond the clouds, a bigger sky—and a flock—await.</p>
+          <p id="film-description" class="synopsis">Meet Pip, a little bird taking his first leap into a world of lush forests, flamingo lagoons, and gathering storms. A warm storyteller follows his journey beyond the clouds, where a bigger sky—and a flock—await.</p>
           <nav class="actions" aria-label="Film downloads and source">
-            <a class="download" href="https://github.com/ArielleTolome/first-light-bird-film/releases/download/v1.0.0/FIRST-LIGHT.mp4">Download original film <span aria-hidden="true">↓</span></a>
+            <a class="download" href="https://github.com/ArielleTolome/first-light-bird-film/releases/download/v1.1.0/FIRST-LIGHT.mp4">Download narrated film <span aria-hidden="true">↓</span></a>
             <a class="source" href="https://github.com/ArielleTolome/first-light-bird-film">View source on GitHub</a>
           </nav>
         </div>
       </section>
     </main>
-    <footer><span>A one-minute journey from first flight to finding a flock.</span><a href="https://github.com/ArielleTolome/first-light-bird-film/releases/tag/v1.0.0">Release v1.0.0</a></footer>
+    <footer><span>A one-minute journey from first flight to finding a flock.</span><a href="https://github.com/ArielleTolome/first-light-bird-film/releases/tag/v1.1.0">Release v1.1.0</a></footer>
   </div>
 </body>
 </html>

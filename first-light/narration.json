@@ -1,0 +1,19 @@
+{
+  "title": "First Light — Pip's Story",
+  "provider": "Kokoro-82M",
+  "voice": "bm_george",
+  "language": "en-GB",
+  "speed": 0.92,
+  "duration": 60,
+  "direction": "A warm British storyteller, intimate and gently curious. Leave room between lines for the original music and nature sounds.",
+  "cues": [
+    {"id":"01","start":0.9,"text":"When morning touched the forest, a little bird named Pip opened his eyes."},
+    {"id":"02","start":8.1,"text":"The sky looked enormous. His wings felt small. But Pip took the leap."},
+    {"id":"03","start":15.8,"text":"Over silver rivers, he found that courage could feel a lot like joy."},
+    {"id":"04","start":23.3,"text":"At the pink lagoon, even the tallest strangers seemed to dance."},
+    {"id":"05","start":30.7,"text":"Then the sky grew dark. Pip was afraid. Still, he kept flying."},
+    {"id":"06","start":38.0,"text":"And above the storm, he found the light had never really left."},
+    {"id":"07","start":45.5,"text":"There were others up here. Little wings, like his, making the same journey."},
+    {"id":"08","start":52.8,"text":"He had gone looking for the sky. Instead, he found where he belonged."}
+  ]
+}

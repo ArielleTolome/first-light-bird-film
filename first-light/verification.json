@@ -8,7 +8,7 @@
   "fps": 30,
   "frames": 1800,
   "stereo_audio": true,
-  "bytes": 54042310,
+  "bytes": 54044947,
   "shots": [
     {
       "shot": 1,
@@ -50,5 +50,40 @@
       "sample_seconds": 56.0,
       "changed_pixel_fraction": 0.2303
     }
-  ]
+  ],
+  "narration": [
+    {
+      "cue": "01",
+      "voice_correlation": 0.9697
+    },
+    {
+      "cue": "02",
+      "voice_correlation": 0.9415
+    },
+    {
+      "cue": "03",
+      "voice_correlation": 0.9302
+    },
+    {
+      "cue": "04",
+      "voice_correlation": 0.9507
+    },
+    {
+      "cue": "05",
+      "voice_correlation": 0.938
+    },
+    {
+      "cue": "06",
+      "voice_correlation": 0.9084
+    },
+    {
+      "cue": "07",
+      "voice_correlation": 0.8914
+    },
+    {
+      "cue": "08",
+      "voice_correlation": 0.9491
+    }
+  ],
+  "music_in_pauses": true
 }
